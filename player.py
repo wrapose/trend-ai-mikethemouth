@@ -447,8 +447,8 @@ def doListen(srvAddr="ws://atxholdem2.tplab.tippingpoint.com:3001", my_id="415a1
             msg = json.loads(result)
             event_name = msg["eventName"]
             data = msg["data"]
-            #print event_name
-            #print data
+            print event_name
+            print data
             react(event_name, data)
     except Exception, e:
         print e.message
